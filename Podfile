@@ -8,5 +8,6 @@ target 'VerticalPrototype' do
   # Pods for VerticalPrototype
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'FirebaseUI/Auth', '~> 2.0'
 
 end

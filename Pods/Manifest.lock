@@ -16,6 +16,8 @@ PODS:
   - FirebaseCore (3.5.0):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (1.0.9)
+  - FirebaseUI/Auth (2.0.3):
+    - Firebase/Auth
   - GoogleToolboxForMac/DebugUtils (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/Defines (2.1.1)
@@ -31,6 +33,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - FirebaseUI/Auth (~> 2.0)
 
 SPEC CHECKSUMS:
   Firebase: 5bc34d7b5ff5792e3386c8b28dc6265deeab0da4
@@ -38,9 +41,10 @@ SPEC CHECKSUMS:
   FirebaseAuth: cc8a1824170adbd351edb7f994490a3fb5c18be6
   FirebaseCore: 1c0a13bf59bb95cdd19577252499f0ec6a03e999
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  FirebaseUI: 5178c00cc511e09b5b9d1eb03233d7f9a3834920
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
 
-PODFILE CHECKSUM: f8de4d966c39003d8118c7d307a3e7d9c9805c28
+PODFILE CHECKSUM: 7038084d448ca6e48a0480adb97fbd6e243f998d
 
 COCOAPODS: 1.1.1

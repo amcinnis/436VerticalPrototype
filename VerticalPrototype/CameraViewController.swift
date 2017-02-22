@@ -9,8 +9,10 @@
 import UIKit
 import AVKit
 import AVFoundation
+import Firebase
+import FirebaseAuthUI
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, FUIAuthDelegate {
     
     private var user: User?
     private var imagePicker = UIImagePickerController()
@@ -30,6 +32,23 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         controller.view.frame = CGRect(x: 0, y: 0, width: videoView.frame.width, height: videoView.frame.height)
         self.addChildViewController(controller)
         videoView.addSubview(controller.view)
+        
+        if let user = user {
+            print("\(user) currently logged in.")
+        }
+        else {
+            if let authUI = FUIAuth.defaultAuthUI() {
+                authUI.providers = []
+                authUI.isSignInWithEmailHidden = false
+                authUI.delegate = self
+                let vc = authUI.authViewController()
+                present(vc, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
+        print("Signed in user \(user)")
     }
 
     @IBAction func takeVideo(_ sender: Any) {
