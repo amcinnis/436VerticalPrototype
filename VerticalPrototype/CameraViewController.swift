@@ -12,7 +12,10 @@ import AVFoundation
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    private var user: User?
     private var imagePicker = UIImagePickerController()
+    private var player = AVPlayer()
+    private var controller = AVPlayerViewController()
     @IBOutlet weak var selectVideoButton: UIButton!
     @IBOutlet weak var videoView: UIView!
 
@@ -21,33 +24,31 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         // Do any additional setup after loading the view.
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
         imagePicker.mediaTypes = ["public.movie"]
+        
+        controller.view.frame = CGRect(x: 0, y: 0, width: videoView.frame.width, height: videoView.frame.height)
+        self.addChildViewController(controller)
+        videoView.addSubview(controller.view)
     }
 
+    @IBAction func takeVideo(_ sender: Any) {
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func selectVideo(_ sender: Any) {
+        imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let videoURL = info[UIImagePickerControllerReferenceURL] as? NSURL
-        print("\(videoURL)")
-//        selectVideoButton.isHidden = true
+        let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL
         imagePicker.dismiss(animated: true, completion: nil)
         
         if let url = videoURL {
-            let player = AVPlayer(url: url as URL)
-            let controller = AVPlayerViewController()
+            player = AVPlayer(url: url as URL)
             controller.player = player
-            player.externalPlaybackVideoGravity = AVLayerVideoGravityResizeAspectFill
-            controller.view.frame = videoView.frame
-            print("\(videoView.frame.origin)")
-//            self.addChildViewController(controller)
-            videoView.addSubview(controller.view)
-//            self.present(controller, animated: true) {
-//                controller.player?.play()
-//            }
         }
     }
     

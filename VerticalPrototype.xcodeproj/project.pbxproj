@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36CE951E8CF32E4D9E8D8676 /* Pods_VerticalPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498CA788E25DCA8435230754 /* Pods_VerticalPrototype.framework */; };
 		98EC807E1E5D281900C776A2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC807D1E5D281900C776A2 /* CameraViewController.swift */; };
 		D5CBDC281E5D24B2007CB02F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBDC271E5D24B2007CB02F /* AppDelegate.swift */; };
 		D5CBDC2C1E5D24B2007CB02F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBDC2B1E5D24B2007CB02F /* SecondViewController.swift */; };
 		D5CBDC2F1E5D24B2007CB02F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CBDC2D1E5D24B2007CB02F /* Main.storyboard */; };
 		D5CBDC311E5D24B2007CB02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CBDC301E5D24B2007CB02F /* Assets.xcassets */; };
 		D5CBDC341E5D24B2007CB02F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CBDC321E5D24B2007CB02F /* LaunchScreen.storyboard */; };
+		D5CBDC3C1E5D77FD007CB02F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5CBDC3B1E5D77FD007CB02F /* GoogleService-Info.plist */; };
+		D5CBDC3E1E5D7B43007CB02F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBDC3D1E5D7B43007CB02F /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		498CA788E25DCA8435230754 /* Pods_VerticalPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerticalPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5018F04E8626E28C491BF0 /* Pods-VerticalPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalPrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VerticalPrototype/Pods-VerticalPrototype.debug.xcconfig"; sourceTree = "<group>"; };
 		98EC807D1E5D281900C776A2 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A85FBAAA31948394CD8766E1 /* Pods-VerticalPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-VerticalPrototype/Pods-VerticalPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		D5CBDC241E5D24B2007CB02F /* VerticalPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CBDC271E5D24B2007CB02F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5CBDC2B1E5D24B2007CB02F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		D5CBDC301E5D24B2007CB02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CBDC331E5D24B2007CB02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5CBDC351E5D24B2007CB02F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CBDC3B1E5D77FD007CB02F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5CBDC3D1E5D7B43007CB02F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CE951E8CF32E4D9E8D8676 /* Pods_VerticalPrototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D891B31184EA50AB339049A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				498CA788E25DCA8435230754 /* Pods_VerticalPrototype.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62D594E3A2719DF7499CA78F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D5018F04E8626E28C491BF0 /* Pods-VerticalPrototype.debug.xcconfig */,
+				A85FBAAA31948394CD8766E1 /* Pods-VerticalPrototype.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5CBDC1B1E5D24B2007CB02F = {
 			isa = PBXGroup;
 			children = (
 				D5CBDC261E5D24B2007CB02F /* VerticalPrototype */,
 				D5CBDC251E5D24B2007CB02F /* Products */,
+				62D594E3A2719DF7499CA78F /* Pods */,
+				2D891B31184EA50AB339049A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +88,11 @@
 				98EC807D1E5D281900C776A2 /* CameraViewController.swift */,
 				D5CBDC2B1E5D24B2007CB02F /* SecondViewController.swift */,
 				D5CBDC2D1E5D24B2007CB02F /* Main.storyboard */,
+				D5CBDC3D1E5D7B43007CB02F /* User.swift */,
 				D5CBDC301E5D24B2007CB02F /* Assets.xcassets */,
 				D5CBDC321E5D24B2007CB02F /* LaunchScreen.storyboard */,
 				D5CBDC351E5D24B2007CB02F /* Info.plist */,
+				D5CBDC3B1E5D77FD007CB02F /* GoogleService-Info.plist */,
 			);
 			path = VerticalPrototype;
 			sourceTree = "<group>";
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5CBDC381E5D24B2007CB02F /* Build configuration list for PBXNativeTarget "VerticalPrototype" */;
 			buildPhases = (
+				F4B8A2AD12EC8DC8CA3AED37 /* [CP] Check Pods Manifest.lock */,
 				D5CBDC201E5D24B2007CB02F /* Sources */,
 				D5CBDC211E5D24B2007CB02F /* Frameworks */,
 				D5CBDC221E5D24B2007CB02F /* Resources */,
+				C594222897E68C6E74734536 /* [CP] Embed Pods Frameworks */,
+				95ADE24BAFCF5FBA4D3CAC5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CBDC341E5D24B2007CB02F /* LaunchScreen.storyboard in Resources */,
+				D5CBDC3C1E5D77FD007CB02F /* GoogleService-Info.plist in Resources */,
 				D5CBDC311E5D24B2007CB02F /* Assets.xcassets in Resources */,
 				D5CBDC2F1E5D24B2007CB02F /* Main.storyboard in Resources */,
 			);
@@ -135,11 +169,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95ADE24BAFCF5FBA4D3CAC5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VerticalPrototype/Pods-VerticalPrototype-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C594222897E68C6E74734536 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VerticalPrototype/Pods-VerticalPrototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B8A2AD12EC8DC8CA3AED37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5CBDC201E5D24B2007CB02F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CBDC3E1E5D7B43007CB02F /* User.swift in Sources */,
 				D5CBDC2C1E5D24B2007CB02F /* SecondViewController.swift in Sources */,
 				D5CBDC281E5D24B2007CB02F /* AppDelegate.swift in Sources */,
 				98EC807E1E5D281900C776A2 /* CameraViewController.swift in Sources */,
@@ -263,6 +346,7 @@
 		};
 		D5CBDC391E5D24B2007CB02F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5018F04E8626E28C491BF0 /* Pods-VerticalPrototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CM86EZ9GM9;
@@ -277,6 +361,7 @@
 		};
 		D5CBDC3A1E5D24B2007CB02F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85FBAAA31948394CD8766E1 /* Pods-VerticalPrototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CM86EZ9GM9;

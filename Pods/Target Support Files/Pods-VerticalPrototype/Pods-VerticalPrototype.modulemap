@@ -1,0 +1,6 @@
+framework module Pods_VerticalPrototype {
+  umbrella header "Pods-VerticalPrototype-umbrella.h"
+
+  export *
+  module * { export * }
+}

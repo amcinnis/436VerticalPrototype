@@ -21,28 +21,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cvr-RC-IE3">
+                                <rect key="frame" x="67" y="124" width="240" height="379"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="fWu-fp-Hx7" kind="embed" id="zpe-bs-tfd"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhO-ug-vFc">
+                                <rect key="frame" x="73" y="56" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take Video"/>
+                                <connections>
+                                    <action selector="takeVideo:" destination="9pv-A4-QxB" eventType="touchUpInside" id="sgF-Z4-Hhk"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-qC-RBF">
-                                <rect key="frame" x="144" y="57" width="87" height="30"/>
+                                <rect key="frame" x="220" y="56" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Video"/>
                                 <connections>
                                     <action selector="selectVideo:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dfs-XI-TcM"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6u-D9-va8">
-                                <rect key="frame" x="70" y="117" width="235" height="337"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="b6r-6V-8k4" kind="embed" id="Ptq-lv-blb"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="selectVideoButton" destination="2eq-qC-RBF" id="ZCm-H1-Ea2"/>
-                        <outlet property="videoView" destination="y6u-D9-va8" id="Cyh-EC-fJ9"/>
+                        <outlet property="videoView" destination="Cvr-RC-IE3" id="fXf-a5-41j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -109,18 +117,17 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="SKD-gP-3PZ">
+        <scene sceneID="T1T-1U-QIk">
             <objects>
-                <viewController id="b6r-6V-8k4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9dp-Ir-K0p">
-                        <rect key="frame" x="0.0" y="0.0" width="235" height="337"/>
+                <viewController id="fWu-fp-Hx7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jqi-TO-THl">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="379"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ARO-jf-xuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0w-a0-Cz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="-847"/>
         </scene>
     </scenes>
     <resources>
