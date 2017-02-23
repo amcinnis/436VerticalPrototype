@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		36CE951E8CF32E4D9E8D8676 /* Pods_VerticalPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498CA788E25DCA8435230754 /* Pods_VerticalPrototype.framework */; };
+		9823BD721E5E559300AA94B7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823BD711E5E559300AA94B7 /* Video.swift */; };
 		986D79D61E5E3EF20082B391 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986D79D51E5E3EF20082B391 /* LoginViewController.swift */; };
+		988E2CA01E5EB8C500CD3959 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E2C9F1E5EB8C500CD3959 /* SearchTableViewController.swift */; };
 		98EC807E1E5D281900C776A2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC807D1E5D281900C776A2 /* CameraViewController.swift */; };
+		98EF19B61E5E96F2002C65DD /* DatabaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EF19B51E5E96F2002C65DD /* DatabaseTableViewController.swift */; };
+		98EF19B81E5EB79C002C65DD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EF19B71E5EB79C002C65DD /* SearchViewController.swift */; };
 		D5CBDC281E5D24B2007CB02F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBDC271E5D24B2007CB02F /* AppDelegate.swift */; };
-		D5CBDC2C1E5D24B2007CB02F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBDC2B1E5D24B2007CB02F /* SecondViewController.swift */; };
 		D5CBDC2F1E5D24B2007CB02F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CBDC2D1E5D24B2007CB02F /* Main.storyboard */; };
 		D5CBDC311E5D24B2007CB02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CBDC301E5D24B2007CB02F /* Assets.xcassets */; };
 		D5CBDC341E5D24B2007CB02F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CBDC321E5D24B2007CB02F /* LaunchScreen.storyboard */; };
@@ -22,12 +25,15 @@
 /* Begin PBXFileReference section */
 		498CA788E25DCA8435230754 /* Pods_VerticalPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerticalPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5018F04E8626E28C491BF0 /* Pods-VerticalPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalPrototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VerticalPrototype/Pods-VerticalPrototype.debug.xcconfig"; sourceTree = "<group>"; };
+		9823BD711E5E559300AA94B7 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		986D79D51E5E3EF20082B391 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		988E2C9F1E5EB8C500CD3959 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		98EC807D1E5D281900C776A2 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		98EF19B51E5E96F2002C65DD /* DatabaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseTableViewController.swift; sourceTree = "<group>"; };
+		98EF19B71E5EB79C002C65DD /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A85FBAAA31948394CD8766E1 /* Pods-VerticalPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerticalPrototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-VerticalPrototype/Pods-VerticalPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		D5CBDC241E5D24B2007CB02F /* VerticalPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CBDC271E5D24B2007CB02F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5CBDC2B1E5D24B2007CB02F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D5CBDC2E1E5D24B2007CB02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5CBDC301E5D24B2007CB02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CBDC331E5D24B2007CB02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,10 +94,13 @@
 			children = (
 				D5CBDC271E5D24B2007CB02F /* AppDelegate.swift */,
 				98EC807D1E5D281900C776A2 /* CameraViewController.swift */,
+				98EF19B51E5E96F2002C65DD /* DatabaseTableViewController.swift */,
 				986D79D51E5E3EF20082B391 /* LoginViewController.swift */,
-				D5CBDC2B1E5D24B2007CB02F /* SecondViewController.swift */,
-				D5CBDC2D1E5D24B2007CB02F /* Main.storyboard */,
+				98EF19B71E5EB79C002C65DD /* SearchViewController.swift */,
+				988E2C9F1E5EB8C500CD3959 /* SearchTableViewController.swift */,
 				D5CBDC3D1E5D7B43007CB02F /* User.swift */,
+				9823BD711E5E559300AA94B7 /* Video.swift */,
+				D5CBDC2D1E5D24B2007CB02F /* Main.storyboard */,
 				D5CBDC301E5D24B2007CB02F /* Assets.xcassets */,
 				D5CBDC321E5D24B2007CB02F /* LaunchScreen.storyboard */,
 				D5CBDC351E5D24B2007CB02F /* Info.plist */,
@@ -226,10 +235,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CBDC3E1E5D7B43007CB02F /* User.swift in Sources */,
-				D5CBDC2C1E5D24B2007CB02F /* SecondViewController.swift in Sources */,
+				98EF19B81E5EB79C002C65DD /* SearchViewController.swift in Sources */,
+				9823BD721E5E559300AA94B7 /* Video.swift in Sources */,
 				D5CBDC281E5D24B2007CB02F /* AppDelegate.swift in Sources */,
 				986D79D61E5E3EF20082B391 /* LoginViewController.swift in Sources */,
+				98EF19B61E5E96F2002C65DD /* DatabaseTableViewController.swift in Sources */,
 				98EC807E1E5D281900C776A2 /* CameraViewController.swift in Sources */,
+				988E2CA01E5EB8C500CD3959 /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

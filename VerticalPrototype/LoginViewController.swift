@@ -19,6 +19,12 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
 
         // Do any additional setup after loading the view.
         
+    }
+    @IBAction func skip(_ sender: Any) {
+        performSegue(withIdentifier: "UserLoggedIn", sender: nil)
+    }
+
+    @IBAction func login(_ sender: Any) {
         if let user = user {
             print("\(user) currently logged in.")
         }
@@ -34,24 +40,37 @@ class LoginViewController: UIViewController, FUIAuthDelegate {
             }
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-        print("Signed in user \(user)")
+        if let myUser = self.user {
+            print ("\(myUser.user) did log in.")
+        }
+        else {
+            if let fUser = user {
+                self.user = User(fUser: fUser)
+            }
+        }
+        performSegue(withIdentifier: "UserLoggedIn", sender: nil)
     }
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "UserLoggedIn" {
+            if let dest = segue.destination as? CameraViewController {
+                dest.user = self.user
+            }
+        }
     }
-    */
+
 
 }

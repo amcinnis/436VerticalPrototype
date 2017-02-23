@@ -9,5 +9,7 @@ target 'VerticalPrototype' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Auth', '~> 2.0'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
 
 end

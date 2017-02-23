@@ -11,10 +11,9 @@ import Firebase
 
 class User {
     private var auth: FIRAuth?
-    private var user: FIRUser?
+    var user: FIRUser?
     
-    init() {
-        auth = FIRAuth.auth()
-        user = auth?.currentUser
+    init(fUser: FIRUser) {
+        self.user = fUser
     }
 }
